@@ -1,0 +1,6 @@
+print("Ingresa tu Peso en kilos")
+kg = float(input())
+print("Ingresa tu Altura en metros")
+mt = float(input())
+imc = kg / (mt**2)
+print ("Tú IMC es: ",round(imc,2))
