@@ -20,7 +20,8 @@ for key in inventario:
     preciodto = value - (value*descuento)
     preciofinal = round(preciodto,2)
     inventario[key] = preciofinal
-
+    
+print("********************")
 print("Precios con descuento")
 for key in inventario:
     value = inventario[key]
