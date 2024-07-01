@@ -23,9 +23,9 @@ class Carro:
         self.aleron = aleron
         
     def describir(self):
-        print("El carro es un ", self.modelo,", de la automotriz ", self.marca, ",del año ",self.año," y de color",self.color6)
-        if self.collar:
-            print("tiene1.0 un alerón de color",self.color,",forma",self.forma,"y material",self.material)
+        print("El carro es un ", self.modelo,", de la automotriz ", self.marca, ",del año ",self.año," y de color",self.color)
+        if self.aleron:
+            print("tiene un alerón de color",self.aleron.color,",forma",self.aleron.forma,"y material",self.aleron.material)
         else:
             print("sin alerón")
 
@@ -81,8 +81,8 @@ class Aleron:
 #definir los objetos        
 carro1 = Carro("Challenger","Dodge","1999","Gris")        
 carro2 = Carro("Camaro","Chevrolet","1999","Rojo")
-aleron1 = Aleron("Rojo","nylon")
-aleron2 = Aleron("Plateado","Acero")
+aleron1 = Aleron("Rojo","nylon","metalico")
+aleron2 = Aleron("Plateado","Acero","plastico")
 
 carro1.colocar_aleron(aleron1)
 carro1.describir()
