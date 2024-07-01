@@ -25,7 +25,7 @@ class Carro:
     def describir(self):
         print("El vehiculo es un ", self.modelo,", de la automotriz ", self.marca, ",del año ",self.año," y de color",self.color)
         if self.aleron:
-            print("tiene un alerón de color",self.color,",forma",self.forma,"y material",self.material)
+            print("tiene un alerón de color",self.aleron.color,",forma",self.aleron.forma,"y material",self.aleron.material)
         else:
             print("sin alerón")
 
@@ -75,7 +75,7 @@ class Aleron:
         self.material = material
         
     def describir(self):
-        print("Este es un alerón de color",self.color,",forma",self.forma,"y material",self.material)
+        print("Este es un alerón de color",self.color,",forma",self.forma,"y material",self .material)
         
 #herencia
 class Motocicleta(Carro):
