@@ -23,8 +23,8 @@ class Carro:
         self.aleron = aleron
         
     def describir(self):
-        print("El vehiculo es un ", self.modelo,", de la automotriz ", self.marca, ",del año ",self.año," y de color",self.color6)
-        if self.collar:
+        print("El vehiculo es un ", self.modelo,", de la automotriz ", self.marca, ",del año ",self.año," y de color",self.color)
+        if self.aleron:
             print("tiene un alerón de color",self.color,",forma",self.forma,"y material",self.material)
         else:
             print("sin alerón")
@@ -92,18 +92,20 @@ class Motocicleta(Carro):
 #definir los objetos        
 carro1 = Carro("Challenger","Dodge","1999","Gris")        
 carro2 = Carro("Camaro","Chevrolet","1999","Rojo")
-aleron1 = Aleron("Rojo","nylon")
-aleron2 = Aleron("Plateado","Acero")
+aleron1 = Aleron("Rojo","nylon","metalico")
+aleron2 = Aleron("Plateado","Acero","plastico")
 
+
+"""
 #nuevo mecanico
 mec1=Mecanico("Juan Alonso")
 #metodos con mecanico
 mec1.reparar_carro(carro1)
 mec1.reparar_carro(carro2)
 mec1.mostrar_carros_mantenimiento()
+"""
 
-
-moto1 = Motocicleta("Dandy","Labrador",5,"guia")
+moto1 = Motocicleta("Hyper","vento",2016,"rojo","carreras")
 moto1.describir()
 
 
