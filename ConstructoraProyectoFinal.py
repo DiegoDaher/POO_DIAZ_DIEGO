@@ -351,6 +351,7 @@ def menu_asignaciones(db):
         else:
             print("Opción no válida. Inténtalo de nuevo.")
 
+
 # Conexión a la base de datos
 db = Database(host='localhost', user='root', database='constructora')
 db.connect()
